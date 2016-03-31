@@ -96,10 +96,10 @@ form label{
 }
 .login{
     position: absolute;
-    top: 50%;
+    top: calc(50% - 100px);
     background-color: aqua;
     padding:20px;
-    left: calc(50% - 270px); //выравниваем по центру с учетом паддингов
+    left: calc(50% - 270px); /*выравниваем по центру с учетом паддингов*/
     max-width:500px;
     background:#FFF;
        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
