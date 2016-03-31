@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+php_flag zend.ze1_compatibility_mode on
+<IfModule mod_charset.c>
+CharsetRecodeMultipartForms off
+</IfModule>
+php_value memory_limit			150M
+php_value upload_max_filesize 20M
+php_value post_max_size 20M

@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+a{
+    color:black;
+}
+.content {
+    padding:20px 10px;
+    background:#f5f5f5;
+}
+header{
+    padding:30px;
+    padding-top:10px;
+}
+#status{float:left;margin-right:20px;}
+.fb-login-button{float:left;}
+.comment {
+    border:1px solid #D2D2D2;
+    margin:10px 0;
+    background-color:white;
+}
+.comment:first-child{margin-top:0;}/* это и следующее правило убирают отступы у первого и последнего комментаия.*/
+.comment:last-child{margin-bottom:0;}
+.comment_head{
+    margin:0;
+    padding:5px;
+    background-color:bisque;
+    border-bottom:2px solid #F5DABA;
+    color: #444;
+}
+.comment_head span{
+    font-style:italic;
+    font-size:0.8em;
+    color:darkgray;
+    float:right;
+}
+.comment_head .comment_number{
+    float:left;
+    margin-right:10px;
+}
+.comment_content{
+    margin:15px;
+}
+.ufile{
+    padding:5px;
+    color: #444;
+}
+.ufile a{
+    color:#FFAA45;
+}
+.tools{
+    margin:0;
+    padding:5px;  
+    background-color:#FFF8C4;
+    border-top:2px solid #F5EEBA;
+}
+.wrapper{
+    width:100%;
+    border: 1px solid grey;
+    border-bottom: none;
+    background-color: #BDF1C8;
+    height: 30px;
+}
+form label{
+    display:block;
+    width:100%;
+    margin:5px;
+    margin-bottom:0;
+}
+.form-item
+{
+    width:calc(100% - 20px);
+    padding:10px;
+    height:100px;
+    resize: none;
+}
+.btn {
+    border: none;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .6em .8em calc(.6em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.3s;
+} 
+.btn:hover { 
+    background: rgb(53, 167, 110); 
+}
+.btn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    background-color: aqua;
+    padding:20px;
+    left: calc(50% - 270px); //выравниваем по центру с учетом паддингов
+    max-width:500px;
+    background:#FFF;
+       -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Я предпочитаю использовать принцип "mobile-first" в проектировании адаптивных дизайнов, а потому сначала у меня - стили, при которых сайт выглядит пристойно на минимальных экранах мобильных устройств, а с увеличением ширины добавляются и плюшки*/
+@media screen and (min-width: 768px) { /*<,768,992,1170*/
+    
+    .content{
+max-width:1280px;
+min-width:450px;
+width:80%;
+margin: 0 auto;
+padding:20px;
+}
+    .comment {
+border:1px solid grey;
+margin:20px 0;
+}
+    
+}

@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /home/u93033/test.format-center.com/www/admin/.htpasswd
+Require valid-user #логин admin пароль admin
+<Files .htpasswd>
+   deny from all  #запрет доступа из браузера к .htpasswd
+</Files>
